@@ -11,6 +11,9 @@
 		C5A181A626E4FB440058C134 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A181A526E4FB440058C134 /* ContentView.swift */; };
 		C5A181A826E4FB450058C134 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A181A726E4FB450058C134 /* Assets.xcassets */; };
 		C5A181AB26E4FB450058C134 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5A181AA26E4FB450058C134 /* Preview Assets.xcassets */; };
+		C5A181B326E4FB640058C134 /* TinderLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A181B226E4FB640058C134 /* TinderLoader.swift */; };
+		C5A181B626E4FD440058C134 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A181B526E4FD440058C134 /* View+Extension.swift */; };
+		C5A181BB26E5078A0058C134 /* TinderLoaderLayoutValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A181BA26E5078A0058C134 /* TinderLoaderLayoutValues.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		C5A181A526E4FB440058C134 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C5A181A726E4FB450058C134 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5A181AA26E4FB450058C134 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C5A181B226E4FB640058C134 /* TinderLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderLoader.swift; sourceTree = "<group>"; };
+		C5A181B526E4FD440058C134 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		C5A181BA26E5078A0058C134 /* TinderLoaderLayoutValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderLoaderLayoutValues.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,9 @@
 		C5A181A226E4FB440058C134 /* TinderAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				C5A181B926E507760058C134 /* Constants */,
+				C5A181B426E4FD340058C134 /* Extensions */,
+				C5A181B126E4FB530058C134 /* Views */,
 				C5A181A326E4FB440058C134 /* TinderAnimationApp.swift */,
 				C5A181A526E4FB440058C134 /* ContentView.swift */,
 				C5A181A726E4FB450058C134 /* Assets.xcassets */,
@@ -65,6 +74,30 @@
 				C5A181AA26E4FB450058C134 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C5A181B126E4FB530058C134 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C5A181B226E4FB640058C134 /* TinderLoader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C5A181B426E4FD340058C134 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C5A181B526E4FD440058C134 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C5A181B926E507760058C134 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				C5A181BA26E5078A0058C134 /* TinderLoaderLayoutValues.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +170,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A181BB26E5078A0058C134 /* TinderLoaderLayoutValues.swift in Sources */,
+				C5A181B326E4FB640058C134 /* TinderLoader.swift in Sources */,
 				C5A181A626E4FB440058C134 /* ContentView.swift in Sources */,
+				C5A181B626E4FD440058C134 /* View+Extension.swift in Sources */,
 				C5A181A426E4FB440058C134 /* TinderAnimationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +312,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +341,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
