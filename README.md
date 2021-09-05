@@ -1,6 +1,6 @@
 # Tinder loading animation 
 
-## If your internet is super slow and thats making you restless, open Tinder. Their loading animation is super satisfying to look at! I built a clone of that animation in SwiftUI this weekend. 
+## If your internet is super slow and thats making you restless, open Tinder. Their loading animation is super calming to look at! I built a clone of that animation in SwiftUI this weekend. 
 
 ### What did I use? 
 
